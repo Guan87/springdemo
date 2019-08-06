@@ -1,0 +1,67 @@
+## https://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/htmlsingle/#boot-features-spring-mvc-auto-configuration
+
+##
+Spring MVC Auto-configuration
+Spring Boot provides auto-configuration for Spring MVC that works well with most applications.
+SpringBoot自动配置好了Spring MVC
+以下是对Spring MVC的默认配置（WebMvcAutoConfiguration中）
+
+The auto-configuration adds the following features on top of Spring’s defaults:
+
+Inclusion of ContentNegotiatingViewResolver and BeanNameViewResolver beans.
+    *自动配置了ViewResolver(试图解析器：根据方法的返回值得到试图对象(View),视图对象决定如何渲染(转发？重定向...))
+    *ContentNegotiatingViewResolver(组合所有的视图解析器)和BeanNameViewResolver在WebMvcAutoConfiguration 中生成。
+    *如何定制：我们可以自己给容器中添加一个视图解析器；自动的将其组合进来。
+Support for serving static resources, including support for WebJars (covered later in this document)).
+    *静态资源文件夹、Webjars （SpringBoot 使用WebJars统一管理静态资源）
+Automatic registration of Converter, GenericConverter, and Formatter beans.
+    *自动注册Converter, GenericConverter, and Formatter beans
+    *Converter ：转换器 （请求响应报文其实都是字符串，解决字符串到java对象的转化问题，反向也是同理）
+    *Formatter ： 格式化器 (如：页面传过来 2017-12-17转成 Date)
+    -->自己添加的格式化器转换器，我们只需要放在容器中即可。
+Support for HttpMessageConverters (covered later in this document).
+    *HttpMessageConverter : 消息转换器 Spring MVC用来转换Http请求和响应的；如：User类型对象 转成Json传到页面
+    *HttpMessageConverters 是从容器中确定，获取所有的HttpMessageConverter
+    -->自己给容器添加HttpMessageConverter，只需要将自己的组件注册到容器中(@Bean @Component)
+
+Static index.html support.
+    *支持静态资源首页访问
+Custom Favicon support (covered later in this document).
+    *favicon.ico
+Automatic use of a ConfigurableWebBindingInitializer bean (covered later in this document).
+    *我们可以配置一个ConfigurableWebBindingInitializer来替换默认的；(添加到容器)
+    作用：1、初始化WebDataBinder(web数据绑定器) 2、请求数据---JavaBean
+Automatic registration of MessageCodesResolver (covered later in this document).
+    *定义错误代码生成规则
+
+##
+其他：
+org.springframework.boot.autoconfigure.web：web所有的自动场景
+
+
+##
+If you want to keep Spring Boot MVC features and you want to add additional MVC configuration
+(interceptors, formatters, view controllers, and other features),
+you can add your own @Configuration class of type WebMvcConfigurer but without @EnableWebMvc.
+If you wish to provide custom instances of RequestMappingHandlerMapping, RequestMappingHandlerAdapter,
+or ExceptionHandlerExceptionResolver, you can declare a WebMvcRegistrationsAdapter instance to provide such components.
+
+If you want to take complete control of Spring MVC, you can add your own @Configuration annotated with @EnableWebMvc.
+
+扩展SpringMVC
+    之前的PringMVC.xml文件配置信息
+    <!--springmvc配置视图解析 访问路径 视图名称-->
+    <mvc:view-controller path="/ok" view-name="success"></mvc:view-controller>
+    <!--拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/ok"/>
+            <!--使用哪个拦截器进行拦截处理-->
+            <bean></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+方法：
+    编写一个配置类（@Configuration），是WebMvcConfigurer类型
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>泡泡堂</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font/iconfont.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body onkeydown="onEnter();">
+<div class="login-title">
+    <img src="./images/index/logo.png" class="titimg1" alt="logo">
+    <b id="title">泡泡堂-任逍遥</b>
+</div>
+<div class="login-form">
+    <div id="login">
+        <div class="login-tit">用户登录</div>
+        <div class="input-group login-inp">
+                <span class="input-group-addon" id="basic-user">
+                    <i class="iconfont icon-user"></i>
+                </span>
+            <input type="text" class="form-control" name="uname" placeholder="请输入用户名" aria-describedby="basic-user">
+        </div>
+        <div class="input-group login-inp">
+                <span class="input-group-addon" id="basic-pwd">
+                    <i class="iconfont icon-pwd"></i>
+                </span>
+            <input type="password" class="form-control" name="upwd" placeholder="请输入密码" aria-describedby="basic-pwd">
+        </div>
+        <div class="row login-text">
+            <div class="col-md-6">
+                <label>
+                    <input type="checkbox" > 记住密码
+                </label>
+            </div>
+            <div class="col-md-6 text-right">
+                <a class="a1" href="javascript:;">忘记密码？</a>
+            </div>
+        </div>
+        <div class="login-btn">
+            <button type="button" class="btn btn-primary" id="loginBtn">登&nbsp;录</button>
+        </div>
+        <div class="row login-text">
+            <div class="col-md-3" style="padding-right:0;">
+                <a class="a2" href="javascript:;">返回</a>
+            </div>
+            <div class="col-md-9 text-right" style="padding-left:0;">
+                还没有账号？请点击<a class="a3" href="javascript:;">注册</a>
+            </div>
+        </div>
+    </div>
+    <div id="register">
+        <div class="login-tit">用户注册</div>
+        <div class="input-group login-inp">
+                <span class="input-group-addon" id="basic-user2">
+                    <i class="iconfont icon-user"></i>
+                </span>
+            <input type="text" class="form-control" name="uname2" placeholder="设置用户名" aria-describedby="basic-user2">
+        </div>
+        <div class="input-group login-inp">
+                <span class="input-group-addon" id="basic-phone2">
+                    <i class="iconfont icon-phone"></i>
+                </span>
+            <input type="text" class="form-control" name="uphone2" placeholder="用户找回密码和联系" aria-describedby="basic-phone2">
+        </div>
+        <div class="input-group login-inp">
+                <span class="input-group-addon" id="basic-pwd2">
+                    <i class="iconfont icon-pwd"></i>
+                </span>
+            <input type="text" class="form-control" name="upwd2" placeholder="设置登录密码" aria-describedby="basic-pwd2">
+        </div>
+        <div class="login-btn">
+            <button type="button" class="btn btn-primary" id="registerBtn">注&nbsp;册</button>
+        </div>
+        <div class="row login-text">
+            <div class="col-md-3" style="padding-right:0;">
+                <a class="a2" href="javascript:;">返回</a>
+            </div>
+            <div class="col-md-9 text-right" style="padding-left:0;">
+                已有帐号？请点击<a class="a3" href="javascript:;">登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="msgModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                <h4 class="modal-title" id="gridSystemModalLabel">提示</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./plugins/jquery/jquery.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

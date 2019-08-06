@@ -1,0 +1,37 @@
+#可以将配置文件放在项目jar包外面，启动项目时先加载jar包外部的application。properties或application.yml配置文件server:
+#配置文件配置的属性参照官方文档：https://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/htmlsingle/#common-application-properties
+
+#我们能配置的属性都是来源于这个功能的properties类
+
+server:
+  port: 8081
+  servlet:
+    context-path: /springdemo
+
+sping:
+  application:
+    name: springdemo
+#开启Springboot的debug， 来让控制台打印自动配置报告。从而知道哪些自动配置类生效 （有效）Positive matches （无效）negative matches
+  debug: true
+  themeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+    prefix: classpath:/static
+
+
+#在org.springframework.boot:spring-boot包下的logging--logback文件加下带有SpringBoot的日志默认设置信息
+#也可以在类路径下创建logback.xml(不推荐使用，直接就被日志框架识别了)或logback-spring.xml(推荐使用带有spring扩展名的，不直接被日志框架加载，由SpringBoot管理，可以在指定的环境中使用的高级功能。)配置文件，根据自己需要配置日志相关属性
+#logging:
+#   path: 不指定路径再当前项目下生成springboot.log 日志
+#可以指定完整路径 path：G：/springboot.log
+#  path: /spring/log #在当前磁盘的根路径下创建spring文件加和里面的log文件夹，使用spring.log作为默认文件
+#  pattern:
+#   console:  #在控制台输出的日志格式
+#   file: %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%msg%n #在指定文件中输出的格式： %d表示日期时间；%thread表示线程名；%-5level级别从左显示5个字符宽度；%%logger{36}表示logger名字最长36个字符，没否则按照句点分割；%msg日志消息；%n换行符
+#  level: trace  #指定日志输出级别  由低到高 trace < debug < info < error
+
+
+
+

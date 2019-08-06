@@ -1,0 +1,358 @@
+/*create by anshangmingyan ^_^*/
+/*清除input=date的默认格式*/
+
+/*!*----------用来移除向下箭头----------*!*/
+/*input[type="date"]::-webkit-calendar-picker-indicator {*/
+/*display: none !important;*/
+/*}*/
+/*----------用来移除上下箭头----------*/
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/*----------用来移除叉叉按钮----------*/
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/*!*  修改日历控件类型 *!*/
+/*::-webkit-datetime-edit { padding: 1px;}  !*控制编辑区域的*!*/
+/*::-webkit-datetime-edit-fields-wrapper { background-color: #fff; }    !*控制年月日这个区域的*!*/
+/*::-webkit-datetime-edit-text { color: #333; padding: 0 .5em; }  !*这是控制年月日之间的斜线或短横线的*!*/
+/*::-webkit-datetime-edit-year-field { color: #333; }    !*控制年文字, 如2013四个字母占据的那片地方*!*/
+/*::-webkit-datetime-edit-month-field { color: #333; }    !*控制月份*!*/
+/*::-webkit-datetime-edit-day-field { color: #333; }    !*控制具体日子*!*/
+/*::-webkit-inner-spin-button { visibility: hidden; }    !*这是控制上下小箭头的*!*/
+/*::-webkit-calendar-picker-indicator {      !*这是控制下拉小箭头的*!*/
+/*border: 1px solid #ccc;*/
+/*border-radius: 2px;*/
+/*box-shadow: inset 0 1px #fff, 0 1px #eee;*/
+/*background-color: #eee;*/
+/*background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6);*/
+/*color: #666;*/
+/*}*/
+/*::-webkit-clear-button {    !*控制清除按钮*!*/
+
+/*}*/
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.marginRight {
+    margin-right: 25%;
+    width: 64px;
+    height: 36px;
+    background-color: #445b84;
+    border-color: #445b84;
+}
+
+table, tbody, tfoot, tr, td, th, .panel-default, .panel, .bootstrap-table .fixed-table-container.fixed-height .fixed-table-border, .bootstrap-table .fixed-table-container .fixed-table-body, .bootstrap-table .fixed-table-container.fixed-height:not(.has-footer), .modal-footer {
+    border: none !important;
+    box-shadow: none;
+    font-weight: normal;
+}
+
+.modal-footer {
+    text-align: right;
+}
+
+.bootstrap-table .fixed-table-toolbar .bs-bars, .form-horizontal .form-group {
+    margin: 0;
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+thead {
+    border-bottom: 1px solid #127FAF;
+}
+
+.panel-default > .panel-heading {
+    background-color: #fff;
+    border-bottom: 2px solid #127FAF;
+}
+
+table th, table td {
+    text-align: center !important;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding: 8px 5px;
+}
+label{
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.newbtn{
+    background: url("./img/button.png") no-repeat;
+    background-size:100% 100%;
+    color: #fff;
+    width: 70px;
+    height: 40px;
+    font-size: 12px;
+}
+.newbtn1{
+    width: 90px;
+}
+.newbtn2{
+    width:120px;
+}
+.newbtn:hover,.newbtn:focus{
+    color: #fff;
+}
+.newbtn:active{
+    color: #000;
+}
+.modal-content {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+.modal-header {
+    text-align: center;
+    background-color: #445b84;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 11px;
+}
+
+.input-group-addon {
+    min-width: 160px;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+}
+
+.modal-dialog {
+    margin-top: 10%;
+}
+
+.glyphicon {
+    margin-right: 5px;
+}
+
+.ceshi {
+    display: inline-block;
+    width: 64px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #127FAF;
+    color: #ffffff;
+}
+
+/*系统日志*/
+#first, #second, #third {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    height: 283px;
+}
+#first1, #second1, #third1 {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    margin-top: 20px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*input 复选框*/
+input[type=checkbox] {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border: 1px solid #c9c9c9;
+    /* border-radius: 0px; */
+    outline: none;
+
+}
+
+input[type=checkbox]:checked {
+    width: 12px;
+    height: 12px;
+    background: url("../setting/img/checkbox-icon.png") no-repeat center;
+    background-size: 12px 12px;
+}
+
+/*模型汇总*/
+.table-moxing {
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid #127FAF;
+    font-weight: normal !important;
+    position: relative;
+    height: 180px;
+    overflow: auto;
+}
+.moxing-can-one {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+.moxing-can-two {
+    position: absolute;
+    top: 10px;
+    left: 55%;
+}
+
+.table-moxing-one {
+    position: absolute;
+    width: 40%;
+    top: 46px;
+    left: 5%;
+}
+
+.table-moxing-two {
+    position: absolute;
+    width: 40%;
+    top: 46px;
+    left: 55%;
+}
+
+.table-moxing-one, .table-moxing-one th, .table-moxing-one td, .table-moxing-two, .table-moxing-two th, .table-moxing-two td {
+    border: 1px solid #ddd !important;
+}
+
+/*模型组合*/
+#mxzh-right {
+    padding-left: 20px;
+}
+
+#mxzh-right .mes-top {
+    text-align: center;
+    color: #127FAF;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#mxzh-right .mes-hr {
+    border-bottom: 2px solid #c6c6c6;
+}
+
+#mxzh-right .mes-mid-table table, #mxzh-right .mes-mid-table table td, #mxzh-right .mes-mid-table table th {
+    border: 1px solid #87AAB9 !important;
+}
+
+@media (min-width: 768px) {
+    .mxzh .modal-dialog {
+        width: 500px;
+    }
+
+    .mxzh .modal-dialog .input-group-addon {
+        min-width: 100px;
+    }
+}
+
+/*模型注册*/
+#menu, #link {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid #e0e0e0;
+}
+
+#menu span, #link span {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#menu span:hover {
+    background-color: #bce8f1;
+    color: #000;
+}
+
+#test {
+    width: 100%;
+    height: calc(100% - 50px);
+    text-align: left;
+}
+
+#test .test-box {
+    display: inline-block;
+    width: calc(33.3% - 20px);
+    height: 70px;
+    line-height: 70px;
+    background-color: #bce8f1;
+    cursor: pointer;
+    border: 1px solid #5C5954;
+    border-radius: 5px;
+    text-align: center;
+    color: #8B008B;
+    font-size: 14px;
+}
+
+/*查询爬虫*/
+#chaxunpachong .pachong-neirong-list {
+    border-bottom: 1px solid #c0c0c0;
+    position: relative;
+    padding: 10px;
+}
+
+#chaxunpachong .pc-list-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #127FAF;
+    color: #fff;
+}
+
+/*数据上传*/
+#filelist {
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    border: 1px solid #e0e0e0;
+    overflow: auto;
+}
+.input-group{
+    padding-right: 10%;
+}
+#filelist p .glyphicon {
+    color: #FFE896;
+}
+#filelist p .glyphicon-arrow-left {
+    color: #000;
+}
+#filelist p {
+    cursor: pointer;
+}
+#filelist p:hover{
+    background-color: #1E90FF;
+    color: #fff ;
+}
+#filelist .active{
+    background-color: #1E90FF;
+    color: #fff ;
+}
+
+/*查询下载*/
+#download-list tr,#download-list td{
+    border: 1px solid #e0e0e0 !important;
+    height: 40px;
+    line-height: 40px;
+}

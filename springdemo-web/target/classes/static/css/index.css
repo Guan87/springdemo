@@ -1,0 +1,3351 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+.modal-dialog {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin: -50px auto auto -50px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0B56AF;
+    border-color: #0B56AF;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0B56AF;
+    border-color: #0B56AF;
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+    background-color: #0B56AF;
+    border-color: #0B56AF;
+}
+
+
+/* head start */
+.header-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 3.6rem;
+    background: #010e3b url("../images/index/header_bg_1.png") repeat-x bottom;
+    background-size: auto;
+    z-index: 4;
+    min-width: calc(100% - 843px);
+    display: flex;
+}
+.header-1 .logo {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.header-1 .logo img{
+    height: 1.6rem;
+    margin: .9rem .5rem 0 1rem;
+}
+.header-1 .text {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.header-1 .text img{
+    height: 1.2rem;
+    margin-top: 1.1rem;
+    width: 100%;
+}
+/*.header-2 {*/
+    /*position: absolute;*/
+    /*left: 40em;*/
+    /*top: 0;*/
+    /*width: 60px;*/
+    /*height: 63px;*/
+    /*background: url("../images/index/header_bg_3.png") no-repeat;*/
+    /*background-size: auto 100%;*/
+    /*z-index: 3;*/
+/*}*/
+.header-3 {
+    width: 100%;
+    height: 3.6rem;
+    background: #010e3b url(../images/index/header_bg_1.png) repeat-x bottom;
+    background-size: auto;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*.header-4 {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 41em;*/
+    /*width: 60px;*/
+    /*height: 3.5rem;*/
+    /*background: url(../images/index/header_bg_1.png) repeat-x bottom;*/
+    /*background-size: auto;*/
+    /*z-index: 5;*/
+/*}*/
+.header-5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 3.6rem;
+    background: #010e3b url("../images/index/header_bg_1.png") repeat-x bottom;
+    background-size: auto;
+    z-index: 7;
+}
+
+.echarts-wid {
+    display: block;
+    width: 100%;
+    height: 380px;
+    border-radius: 8px;
+    border: 1px solid #4b8bb7;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#dnysEcharts{
+    width: 488px;
+}
+#windspeeddata, #sunRadiationData{
+    width: 420px;
+    display: none;
+}
+#dnysEcharts2{
+    width: 380px;
+    height: 240px;
+}
+#dnysEcharts3{
+    height: 240px;
+}
+#echartsCheck,#echartsCheck1,#echartsCheck2,#echartsCheck3{
+    position: absolute;
+    right: 40px;
+}
+#dlysEchartsContent, #dlysEchartsContent1, #dlysEchartsContent2, #dlysEchartsContent3{
+    width: 446px;
+    height: 320px;
+    margin-top: 50px;
+}
+.icon span{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.navtop {
+    float: right;
+    margin-right: .5rem;
+    display: flex;
+}
+.navtop .navlist{
+    height: 3.6rem;
+    text-align: center;
+    color: white;
+    padding: .4rem .7rem 0 .7rem;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    margin: 0 .3rem;
+    min-width: 80px;
+}
+.navItem{
+    display: flex;
+}
+.navItem span:nth-of-type(1){
+    height: 16px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.navtop .navlist .triangle {
+    margin-left: -.1rem;
+}
+
+.listitem {
+    background: #2a4070;
+    position: absolute;
+    top: 3.6rem;
+    left: 0;
+    display: none;
+    transition: 0.35s;
+    min-width: 100%;
+    padding: .2rem 0;
+    z-index: 9;
+}
+.navlist .icon {
+    margin-bottom: .2rem;
+}
+.navlist-chi .icon {
+    padding-right: 0.8em;
+}
+.navtop .navlist:hover .listitem {
+    opacity: 1;
+    top: 3.6rem;
+    display: block;
+    z-index: 999;
+}
+.navlist-hover {
+    color: #52F3FF!important;
+}
+.listitem li{
+    line-height: 0;
+    /*height: 30px;*/
+    /*font-size: 14px;*/
+    width: 100%;
+    overflow: inherit;
+    padding: 0;
+    box-sizing: border-box;
+}
+.listitem li a {
+    display: inline-block;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-size: .75rem;
+}
+.listitem li a:hover,
+.item-hove {
+    background: #445b84;
+}
+
+.listitem-right {
+    background: #2a4070;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    transition: 0.35s;
+    opacity: 0;
+    min-width: 100%;
+    max-width: 130%;
+    margin-left: 1px;
+    z-index: 5;
+}
+.navlist-right {
+    position: relative;
+}
+.navlist-right:hover .listitem-right {
+    opacity: 1;
+    left: 100%;
+    display: block;
+}
+.djczl-children {
+    display: none;
+}
+.username {
+    display: inline-block;
+    width: 4em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.listitem div {
+    line-height: 1.6rem;
+    text-align: left;
+    font-weight: 600;
+    padding: 0 .7rem;
+    margin-bottom: .2rem;
+}
+.listitem div .left-border {
+    border-left: 3px solid #52F3FF;
+    margin-right: .4rem;
+}
+.listitem dl {
+    text-align: left;
+    font-size: .7rem;
+}
+.listitem dl dt {
+    font-weight: 400;
+}
+/* head end */
+
+/* left nav */
+#leftSearch {
+    width: 16rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 3.9rem;
+    left: .3rem;
+    background: rgba(13, 45, 109, .6);
+    z-index: 9;
+    border-radius: .2rem;
+}
+.searchBox {
+    position: relative;
+    width: 100%;
+    height: 2.6rem;
+    text-align: center;
+    line-height: 2.6rem;
+    box-sizing: border-box;
+    /* margin-bottom: 2px; */
+    padding: 0 2.8rem 0 .5rem;
+}
+.searchBox input{
+    width: 100%;
+    height: 1.8rem;
+    border-radius: .2rem;
+    background: rgba(72, 103, 140, .7);
+    border: 0;
+    color: #fff;
+    outline: none;
+    padding: 0 1.8rem 0 .7rem;
+    margin-right: 1.8rem;
+}
+.searchBox input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    opacity:0.8;
+}
+.searchBox input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+    opacity:0.8;
+}
+.searchBox input:-ms-input-placeholder{
+    color: #ccc;
+    opacity:0.8;
+}
+.searchBox input::-webkit-input-placeholder{
+    color: #ccc;
+    opacity:0.8;
+}
+.iconSearch{
+    position: absolute;
+    top: 1px;
+    right: 3.5rem;
+    color: #fff;
+    font-size: 1rem!important;
+}
+.searchList {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+.searchList .iconfont {
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#leftBox {
+    /*height: calc(100% - 102px);*/
+    position: absolute;
+    top: 6.8rem;
+    left: .3rem;
+    display: none;
+    z-index: 2;
+}
+.o-box{
+    width: 3rem;
+    height: 100%;
+}
+.o-box-list {
+    width: 3rem;
+    height: 100%;
+    color: white;
+    background: rgba(1, 14, 59, .36);
+    border-radius: .1rem;
+    padding-bottom: .3rem;
+}
+.o-list{
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: .45rem;
+}
+.o-list:hover{
+    background: #1d3251;
+    position: relative;
+}
+.o-list div{
+    width: 100%;
+    line-height: 1.1rem;
+    text-align: center;
+}
+.nav-icon span{
+    font-size: 1rem;
+}
+.o-active {
+    position: relative;
+    background: #1d3251 !important;
+}
+.box-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -.15rem;
+    width: .15rem;
+    height: 3.8rem;
+}
+.box-hover:after {
+    content: '';
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    margin-top: 3.8rem;
+    border-width: .3rem;
+    border-style: solid;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: #15628C transparent transparent transparent;
+}
+.o-active .box-hover {
+    display: block;
+    background: #127FAF;
+}
+.t-box {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    width: 12.5rem;
+    max-height: calc(100vh - 6.9rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: .1rem;
+    color: white;
+    background: rgba(1, 14, 59, .36);
+}
+.t-box .box-minhei {
+    min-height: 50vh;
+    max-height: 100%;
+}
+.x-Box li {
+    width: 100%;
+}
+.x-List {
+    text-indent: 1rem;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+}
+.x-List-0 {
+    line-height: 1.9rem;
+}
+.x-List-2 {
+    text-indent: 1.8rem;
+}
+.x-List-3 {
+    text-indent: 2.3rem;
+}
+.x-List-4 {
+    text-indent: 2.8rem;
+}
+
+.x-Title {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1d3251;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.x-List-0 > .x-Title {
+    background: url("../images/index/one_bg.png") repeat-x center left;
+    background-size: auto 100%;
+}
+.x-List-1 > .x-Title {
+    background: #1d3251;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: .75rem;
+}
+.x-List-2 > .x-Title {
+    background: rgba(68,91,132,.7);
+}
+
+.layer-title:hover{
+    border: 1px solid #51bbe5;
+}
+.icon-duoxuankuang, .icon-duoxuankuang1{
+    color: #BDDBEF;
+    background: #445B84;
+    border-radius: .1rem;
+    margin: 0 .25rem 0 0;
+    vertical-align: middle;
+}
+.layer-title{
+    position: relative;
+    cursor: pointer;
+}
+.layer-title .right{
+    position: absolute;
+    right: 1rem;
+    font-size: .6rem;
+}
+.x-Box {
+    display: none;
+}
+/* left nav end */
+
+/* iframe */
+#frameBox{
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: #1d3251;
+    z-index: 1;
+    overflow: hidden;
+}
+#frameBox iframe{
+    width: 100%;
+    height: 100%;
+}
+/* iframe end */
+
+
+
+/* tool start */
+.toolBox-btn {
+    float: right;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    background-color: rgba(1, 14, 59, .36);
+    margin-left: .2rem;
+    color: #fff;
+    padding: 0 .5rem;
+    border-radius: .1rem;
+    cursor: pointer;
+}
+.tool-list {
+    display: none;
+    float: right;
+    background-color: rgba(1, 14, 59, .36);
+    border-radius: .1rem;
+    padding: 0 .2rem;
+}
+#toolBox {
+    display: none;
+    position: absolute;
+    top: 3.7rem;
+    right: .3rem;
+    z-index: 3;
+    padding: 0 .2rem;
+}
+.tool-list li {
+    float: left;
+    width: 2.1rem;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    margin: 0;
+    text-align: center;
+}
+.tool-list:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.tool-list a {
+    display: inline-block;
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: .25rem 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+.tool-list li:last-child a {
+    border-right: 0;
+}
+.tool-list li .iconfont {
+    font-size: 1.2rem;
+    color: #fff;
+    vertical-align: middle;
+}
+.tool-list li .icon-refresh {
+    font-size: 1.1rem;
+}
+.tool-list li .icon-shijianzhou {
+    font-size: 1.35rem;
+}
+.tool-list .tool-hove .iconfont {
+    color: #ffb744;
+}
+.toolBox-btn .icon-gongju {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-right: .25rem;
+}
+/* tool end */
+
+
+
+/* 图例 start */
+#legendBtn {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    width: 3rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #fff;
+    /*background: url("../images/index/hdnavBg.png") no-repeat center left;*/
+    /*background-size: auto 100%;*/
+    background: rgba(1, 14, 59, .36);
+    text-align: center;
+    z-index: 21;
+    cursor: pointer;
+    border-radius: .1rem;
+    display: none;
+}
+#legendAlert {
+    display: none;
+    position: absolute;
+    right: 3.9rem;
+    bottom: .45rem;
+    width: 7rem;
+    padding: .25rem .5rem;
+    background: rgba(1, 14, 59, .36);
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 22;
+    border-radius: .1rem;
+}
+.legend-list {
+    height: 14rem;
+    color: #fff;
+    overflow-y: auto;
+    margin-top: .25rem;
+}
+.legend-list li {
+    display: none;
+}
+body #legendAlert, #legendAlert * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#legendType {
+    background: transparent;
+    color: #f2f2f2;
+}
+#legendType option{
+    background: rgba(35, 70, 128, 0.9) !important;
+    color: #f2f2f2;
+}
+.line-tl {
+    height: 1.4rem;
+    line-height: 1.4rem;
+    padding: 0 .5rem 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .65rem;
+}
+.line-tl .bg-span {
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    margin-right: .25rem;
+    vertical-align: middle;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.legend-list .img-rc {
+    height: 14rem;
+    background: url("../images/icon/融池.png") no-repeat center center;
+    background-size: auto 96%;
+}
+.legend-list .img-hbhd {
+    height: 14rem;
+    background: url("../images/icon/海冰厚度.png") no-repeat center center;
+    background-size: auto 96%;
+}
+/* 图例 end */
+
+
+/* 右侧弹窗 start */
+#xzqsModal .modal-body,
+#jqqsModal .modal-body,
+#yjqsModal .modal-body {
+    max-height: 100%;
+}
+#xzqsModal{
+    width: 24vw;
+}
+#jqqscsModal,
+#yjqscsModal {
+    width: 380px;
+}
+#xzqscsModal{
+    width: 440px;
+}
+#xzqscsModal .col-md-9 .form-control,
+#jqqscsModal .col-md-9 .form-control,
+#yjqscsModal .col-md-9 .form-control {
+    width: 100%;
+}
+#xzqscsModal .row{
+    margin: 0;
+}
+#hbskfxModal {
+    width: 470px;
+}
+.right-modal {
+    position: absolute;
+    right: -100%;
+    z-index: 11;
+    border-radius: .2rem;
+    /*height: 0;*/
+    opacity: 0;
+    top: 4rem;
+    /*bottom: 10px;*/
+    overflow: hidden;
+}
+.right-modal-hide {
+    width: 0;
+    opacity: 0;
+    right: -100%;
+    overflow: hidden;
+    animation: modalhider .6s;
+    -moz-animation: modalhider .6s;	/* Firefox */
+    -webkit-animation: modalhider .6s;	/* Safari 和 Chrome */
+    -o-animation: modalhider .6s;	/* Opera */
+}
+.right-modal-show {
+    width: 520px;
+    opacity: 1;
+    right: .3rem;
+    overflow: inherit;
+    animation: modalshowr .4s;
+    -moz-animation: modalshowr .4s;	/* Firefox */
+    -webkit-animation: modalshowr .4s;	/* Safari 和 Chrome */
+    -o-animation: modalshowr .4s;	/* Opera */
+}
+.right-modal-hide2 {
+    width: 0;
+    opacity: 0;
+    right: -100%;
+    overflow: hidden;
+    animation: modalhider2 .6s;
+    -moz-animation: modalhider2 .6s;	/* Firefox */
+    -webkit-animation: modalhider2 .6s;	/* Safari 和 Chrome */
+    -o-animation: modalhider2 .6s;	/* Opera */
+}
+.right-modal-show2 {
+    width: auto;
+    opacity: 1;
+    right: 28vw;
+    overflow: inherit;
+    animation: modalshowr2 .4s;
+    -moz-animation: modalshowr2 .4s;	/* Firefox */
+    -webkit-animation: modalshowr2 .4s;	/* Safari 和 Chrome */
+    -o-animation: modalshowr2 .4s;	/* Opera */
+}
+#xzqscsModal.right-modal-show2{
+    right: 25vw;
+}
+.right-modal-hide3 {
+    width: 0;
+    opacity: 0;
+    right: -100%;
+    overflow: hidden;
+    animation: modalhider3 .6s;
+    -moz-animation: modalhider3 .6s;	/* Firefox */
+    -webkit-animation: modalhider3 .6s;	/* Safari 和 Chrome */
+    -o-animation: modalhider3 .6s;	/* Opera */
+}
+.right-modal-show3 {
+    width: auto;
+    opacity: 1;
+    right: 28vw;
+    overflow: inherit;
+    animation: modalshowr3 .4s;
+    -moz-animation: modalshowr3 .4s;	/* Firefox */
+    -webkit-animation: modalshowr3 .4s;	/* Safari 和 Chrome */
+    -o-animation: modalshowr3 .4s;	/* Opera */
+}
+.left-modal {
+    position: absolute;
+    left: -25rem;
+    z-index: 11;
+    border-radius: .2rem;
+    /*height: 0;*/
+    opacity: 0;
+    top: 7.9rem;
+    /*bottom: 10px;*/
+    overflow: hidden;
+}
+.left-modal-hide {
+    width: 0;
+    opacity: 0;
+    left: -100%;
+    overflow: hidden;
+    animation: modalhidel .6s;
+    -moz-animation: modalhidel .6s;	/* Firefox */
+    -webkit-animation: modalhidel .6s;	/* Safari 和 Chrome */
+    -o-animation: modalhidel .6s;	/* Opera */
+}
+.left-modal-show {
+    width: auto;
+    opacity: 1;
+    left: .3rem;
+    overflow: inherit;
+    animation: modalshowl .4s;
+    -moz-animation: modalshowl .4s;	/* Firefox */
+    -webkit-animation: modalshowl .4s;	/* Safari 和 Chrome */
+    -o-animation: modalshowl .4s;	/* Opera */
+}
+@keyframes modalshowr {
+    from {
+        width: 0;
+        opacity: 0;
+        right: -100%;
+    }
+    to {
+        width: auto;
+        opacity: 1;
+        right: .3rem;
+    }
+}
+@keyframes modalhider {
+    from {
+        width: auto;
+        opacity: 1;
+        right: .3rem;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+        right: -100%;
+    }
+}
+@keyframes modalshowr2 {
+    from {
+        width: 0;
+        opacity: 0;
+        right: 3.5rem;
+    }
+    to {
+        width: 466px;
+        opacity: 1;
+        right: 477px;
+    }
+}
+@keyframes modalhider2 {
+    from {
+        width: 466px;
+        opacity: 1;
+        right: 477px;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+        right: 3.5rem;
+    }
+}
+@keyframes modalshowr3 {
+    from {
+        width: 0;
+        opacity: 0;
+        right: 3.5rem;
+    }
+    to {
+        width: 466px;
+        opacity: 1;
+        right: 568px;
+    }
+}
+@keyframes modalhider3 {
+    from {
+        width: 466px;
+        opacity: 1;
+        right: 568px;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+        right: 3.5rem;
+    }
+}
+@keyframes modalshowl
+{
+    from {
+        width: 0;
+        opacity: 0;
+        left: -100%;
+    }
+    to {
+        width: auto;
+        opacity: 1;
+        left: .3rem;
+    }
+}
+@keyframes modalhidel
+{
+    from {
+        width: auto;
+        opacity: 1;
+        left: .3rem;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+        left: -100%;
+    }
+}
+
+.lr-modal .modal-content {
+    background-color: rgba(1, 14, 59, .36);
+    overflow: hidden;
+    border: 1px solid #007aff;
+}
+.lr-modal .modal-header {
+    padding: 0;
+    text-align: center;
+}
+.lr-modal .modal-header .close {
+    position: absolute;
+    top: .4rem;
+    right: .5rem;
+    outline: none;
+    float: right;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1;
+    color: #0b56af;
+    text-shadow: none;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.lr-modal .modal-title {
+    height: 1.7rem;
+    text-align: center;
+    color: #fff;
+    border-radius: .2rem .2rem 0 0;
+    display: inline-block;
+    font-size: 0;
+}
+.lr-modal .modal-title .tit-con {
+    display: inline-block;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    vertical-align: middle;
+}
+.lr-modal .modal-title .tit-left {
+    width: 2rem;
+    background: url("../images/index/tit_bg1.png") no-repeat bottom right;
+    background-size: auto 1.7rem;
+}
+.lr-modal .modal-title .tit-left:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+}
+.lr-modal .modal-title .tit-center {
+    font-size: .8rem;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url("../images/index/tit_bg2.png") repeat-x center left;
+    background-size: auto 1.7rem;
+    min-width: 7em;
+}
+#dnysModal .tit-center {
+    max-width: -moz-calc(19rem - 8rem);
+    max-width: -webkit-calc(19rem - 8rem);
+    max-width: calc(19rem - 8rem);
+}
+.lr-modal .modal-title .tit-right {
+    width: 2rem;
+    background: url("../images/index/tit_bg3.png") no-repeat bottom left;
+    background-size: auto 1.7rem;
+}
+
+.lr-modal .control-label {
+    height: 1.7rem;
+    line-height: 1.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lr-modal .modal-body {
+    padding: 0 .75rem 0;
+    color: #fff;
+    overflow: auto;
+    margin: .75rem 0 0.5rem;
+    max-height: 78vh;
+    min-height: 23vh;
+    font-size: .7rem;
+}
+.lr-modal .form-control {
+    background: transparent;
+    color: #fff;
+    border-color: #BDDBEF;
+}
+.lr-modal .select_wrapper {
+    border-color: #BDDBEF;
+}
+.lr-modal .form-control option {
+    color: #fff;
+    background: #234680;
+}
+.lr-modal .form-input {
+    width: 5em;
+    height: 1.2rem;
+    padding: 0 .25rem;
+}
+.lr-modal .btn-width-84 {
+    width: 4.2rem;
+    margin: 0 0 0 .75rem;
+}
+.lr-modal .modal-footer {
+    padding: .9rem;
+}
+.lr-modal .table-tit {
+    margin-bottom: .25rem;
+}
+.lr-modal .btn-width-26 {
+    width: 3.7rem;
+    height: 1.3rem;
+    padding: 0;
+    font-size: .6rem;
+}
+#hbskfxModal .icon-btn{
+    right: 3.75rem;
+}
+.icon-btn {
+    background: transparent;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: .75rem;
+    border: 0;
+    outline: none;
+}
+.icon-btn img {
+    height: auto;
+    margin: 0;
+}
+
+.lr-modal .nav-tabs {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: .6rem;
+    text-align: center;
+}
+.lr-modal .nav-tabs>li {
+    float: none!important;
+    display: inline-block;
+}
+.lr-modal .nav-tabs>li.active>a,
+.lr-modal .nav-tabs>li.active>a:focus,
+.lr-modal .nav-tabs>li.active>a:hover {
+    cursor: default;
+    color: #fff;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+}
+.lr-modal .nav>li>a {
+    padding: .35rem .75rem;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    margin: 0 .35rem;
+}
+.lr-modal .nav>li>a:focus,
+.lr-modal .nav>li>a:hover {
+    background: transparent;
+    border: 0;
+    /*border-bottom: 2px solid transparent;*/
+}
+
+.left-label {
+    float: left;
+    /* width: 6.5em; */
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: .6rem;
+    text-align: left;
+}
+.right-label {
+    /* margin-left:6.5em; */
+    margin-bottom: .6rem;
+    min-height: 34px;
+    padding-left: 12px;
+}
+
+.wid-input,
+.lr-modal .form-control {
+    width: 140px;
+}
+#hbskfxModal .form-control {
+    width: 200px;
+}
+.tab-pane .form-control {
+    max-width: 100%;
+}
+.right-label-icon {
+    line-height: 34px;
+}
+.right-label-icon .iconfont {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 24px;
+    margin-right: .4em;
+}
+.right-label-icon .icon-text {
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 600;
+}
+.modal-type-none {
+    display: none;
+}
+/* 右侧弹窗 end */
+
+/* 岛屿舆情 start */
+.yq-list {
+    line-height: 1.1rem;
+    padding: 0 .5rem .5rem;
+    height: 50vh;
+    margin-bottom: .75rem;
+    overflow: auto;
+}
+.yq-list li {
+    padding-bottom: .45rem;
+    margin: 0 0 .25rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.yq-list li:last-child {
+    border-bottom: 0;
+}
+.yq-list .yq-title {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    min-height: 1.1rem;
+    padding: 0;
+}
+.yq-list .yq-content {
+    padding: 0;
+}
+.yq-list .yq-btn {
+    padding-right: 0;
+    text-align: right;
+}
+.qyxq-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    min-height: 1.5rem;
+}
+.qyxq-100 {
+    line-height: 1.5rem;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) dashed;
+}
+.qyxq-100:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.qyxq-33 {
+    width: 33.33%;
+    float: left;
+}
+.qyxq-content {
+    padding: 1rem .5rem 3rem .5rem;
+    text-indent: 2em;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+.qyxq-href a {
+    color: #fff;
+    text-decoration: underline;
+}
+.qyxq-href a:hover {
+    color: #00aeff;
+}
+/* 岛屿舆情 end */
+
+
+/* 岛礁灾害模拟 start */
+.tf-content {
+    padding: 0 1rem 1rem;
+}
+.tf-content>div {
+    padding: 0 0 .5rem 0;
+    line-height: 1rem;
+}
+.tf-content .tf-val {
+    padding-left: .5rem;
+}
+.tf-btn {
+    min-height: 1.75rem;
+    text-align: center;
+}
+/* 岛礁灾害模拟 end */
+
+
+/* 岛礁承载力 start */
+.czl-table {
+    width: 100%;
+}
+.czl-table td {
+    height: 3.5rem;
+    vertical-align: middle;
+}
+.czl-table tr td:last-child {
+    width: 4.5rem;
+    text-align: center;
+}
+.czl-table tr td:first-child div {
+    width: 100%;
+    height: 3.5rem;
+}
+.czlcs-table {
+    padding: .5rem .5rem 0;
+    height: 12.35rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* 岛礁承载力 end */
+
+/* 时间轴 start */
+#timeaxisBox {
+    display: none;
+    position: absolute;
+    bottom: .5rem;
+    z-index: 101;
+    border-radius: .2rem;
+    overflow: hidden;
+    width: 65%;
+    left: 50%;
+    margin-left: -30%;
+}
+/* 时间轴 end */
+
+.loadingBox{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.9rem;
+    background: url(../images/index/one_bg.png) repeat-x center left;
+    background-size: auto 100%;
+    box-sizing: border-box;
+    margin-bottom: .1rem;
+}
+
+.loadingBox {
+    display: none;
+}
+.iconLoading {
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    vertical-align: middle;
+    margin: 0 auto;
+    background: url(../images/jiazai.png) no-repeat center center;
+    background-size: .9rem;
+    animation: loadmove 1.2s linear 0s infinite;
+    -moz-animation: loadmove 1.2s linear 0s infinite;
+    /* Firefox */
+    -webkit-animation: loadmove 1.2s linear 0s infinite;
+    /* Safari and Chrome */
+    -o-animation: loadmove 1.2s linear 0s infinite;
+}
+@keyframes loadmove {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-moz-keyframes loadmove { /* Firefox */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes loadmove { /* Safari and Chrome */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-o-keyframes loadmove { /* Opera */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+/* 提示 */
+#msgModal .modal-body {
+    text-align: center;
+    padding-top: 1.5rem;
+    color: #fff;
+}
+#msgModal .btn {
+    padding: 0 1rem;
+}
+#msgModal .modal-content {
+    background-color: rgba(1, 14, 59, .36);
+    overflow: hidden;
+    border: 1px solid #007aff;
+}
+#msgModal .modal-header {
+    padding: 0;
+    text-align: center;
+}
+
+#msgModal .modal-title {
+    height: 1.7rem;
+    text-align: center;
+    color: #fff;
+    border-radius: .2rem .2rem 0 0;
+    display: inline-block;
+    font-size: 0;
+}
+#msgModal .modal-title .tit-con {
+    display: inline-block;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    vertical-align: middle;
+}
+#msgModal .modal-title .tit-left {
+    width: 2rem;
+    background: url("../images/index/tit_bg1.png") no-repeat bottom right;
+    background-size: auto 1.7rem;
+}
+#msgModal .modal-title .tit-left:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+}
+#msgModal .modal-title .tit-center {
+    font-size: .8rem;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url("../images/index/tit_bg2.png") repeat-x center left;
+    background-size: auto 1.7rem;
+    min-width: 4em;
+}
+#msgModal .tit-center {
+    max-width: -moz-calc(19rem - 8rem);
+    max-width: -webkit-calc(19rem - 8rem);
+    max-width: calc(19rem - 8rem);
+}
+#msgModal .modal-title .tit-right {
+    width: 2rem;
+    background: url("../images/index/tit_bg3.png") no-repeat bottom left;
+    background-size: auto 1.7rem;
+}
+.row-btn {
+    text-align:right;
+    margin: .5rem 0;
+}
+
+
+/* 分页 start */
+.page_div {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+/*
+ * 页数按钮样式
+ */
+.page_div a {
+    min-width: 1.4rem;
+    height: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2)!important;
+    text-align: center;
+    margin: 0 .2rem;
+    cursor: pointer;
+    line-height: 1.3rem;
+    color: #ffffff;
+    font-size: .7rem;
+    display: inline-block;
+}
+#firstPage,
+#lastPage {
+    width: 2.5rem;
+}
+#prePage,
+#nextPage {
+    color: #fff;
+}
+.page_div .current {
+    background-color: #02a2f1;
+    border-color: #02a2f1!important;
+    color: #FFFFFF;
+}
+.totalPages {
+    margin: 0 .5rem;
+}
+.totalPages span,
+.totalSize span {
+    color: #00aeff;
+    margin: 0 .25rem;
+    line-height: 1.5rem;
+}
+/* 分页 end */
+
+
+/* 复选框 */
+.jxs-checkbox {
+    line-height: 34px;
+    margin-left: 2em;
+    cursor: pointer;
+}
+.jxs-checkbox:first-child {
+    margin-left: 0;
+}
+.jxs-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* 模型布局 */
+.modal-bg-1 {
+    width: 100%;
+    height: 68vh;
+    background: url(../images/index/modal_4.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.modal-bg-1 .modal-bg-col-1 {
+    position: absolute;
+    top: 0;
+    left: 13px;
+}
+.modal-bg-1 .modal-bg-col-2 {
+    position: absolute;
+    top: 0;
+    left: 177px;
+}
+.modal-bg-1 .modal-bg-col-3 {
+    position: absolute;
+    top: 0;
+    left: 347px;
+}
+.modal-bg-1 .xzqs-span {
+    position: absolute;
+    cursor: pointer;
+}
+.modal-bg-1 .modal-bg-col-1 .xzqs-span {
+    width: 104px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+.modal-bg-1 .modal-bg-col-2 .xzqs-span {
+    width: 86px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span {
+    width: 74px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.modal-bg-1 .modal-bg-col-1 .xzqs-span:nth-child(1) {
+    top: 252px;
+}
+.modal-bg-1 .modal-bg-col-1 .xzqs-span:nth-child(2) {
+    top: 539px;
+}
+
+.modal-bg-1 .modal-bg-col-2 .xzqs-span:nth-child(1) {
+    top: 132px;
+}
+.modal-bg-1 .modal-bg-col-2 .xzqs-span:nth-child(2) {
+    top: 379px;
+}
+.modal-bg-1 .modal-bg-col-2 .xzqs-span:nth-child(3) {
+    top: 542px;
+}
+
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(1) {
+    top: 12px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(2) {
+    top: 94px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(3) {
+    top: 176px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(4) {
+    top: 258px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(5) {
+    top: 340px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(6) {
+    top: 422px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(7) {
+    top: 504px;
+}
+.modal-bg-1 .modal-bg-col-3 .xzqs-span:nth-child(8) {
+    top: 586px;
+}
+.modal-bg-2,
+.modal-bg-3 {
+    width: 100%;
+    height: 48vh;
+    background: url(../images/index/modal_5.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.modal-bg-2 .modal-bg-col-1,
+.modal-bg-3 .modal-bg-col-1 {
+    position: absolute;
+    top: 0;
+    left: 13px;
+}
+.modal-bg-2 .modal-bg-col-2,
+.modal-bg-3 .modal-bg-col-2 {
+    position: absolute;
+    top: 0;
+    left: 157px;
+}
+.modal-bg-2 .modal-bg-col-3,
+.modal-bg-3 .modal-bg-col-3 {
+    position: absolute;
+    top: 0;
+    left: 298px;
+}
+.modal-bg-2 .modal-bg-col-4,
+.modal-bg-3 .modal-bg-col-4 {
+    position: absolute;
+    top: 0;
+    left: 438px;
+}
+.modal-bg-2 .jqqs-span,
+.modal-bg-3 .yjqs-span {
+    position: absolute;
+    cursor: pointer;
+}
+.modal-bg-2 .modal-bg-col-1 .jqqs-span,
+.modal-bg-3 .modal-bg-col-1 .yjqs-span {
+    width: 104px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+.modal-bg-2 .modal-bg-col-2 .jqqs-span,
+.modal-bg-3 .modal-bg-col-2 .yjqs-span {
+    width: 104px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+}
+.modal-bg-2 .modal-bg-col-3 .jqqs-span,
+.modal-bg-3 .modal-bg-col-3 .yjqs-span {
+    width: 86px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span,
+.modal-bg-3 .modal-bg-col-4 .yjqs-span {
+    width: 74px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.modal-bg-2 .modal-bg-col-1 .jqqs-span:nth-child(1),
+.modal-bg-3 .modal-bg-col-1 .yjqs-span:nth-child(1) {
+    top: 391px;
+}
+.modal-bg-2 .modal-bg-col-2 .jqqs-span:nth-child(1),
+.modal-bg-3 .modal-bg-col-2 .yjqs-span:nth-child(1) {
+    top: 252px;
+}
+.modal-bg-2 .modal-bg-col-2 .jqqs-span:nth-child(2),
+.modal-bg-3 .modal-bg-col-2 .yjqs-span:nth-child(2) {
+    top: 539px;
+}
+
+.modal-bg-2 .modal-bg-col-3 .jqqs-span:nth-child(1),
+.modal-bg-3 .modal-bg-col-3 .yjqs-span:nth-child(1) {
+    top: 132px;
+}
+.modal-bg-2 .modal-bg-col-3 .jqqs-span:nth-child(2),
+.modal-bg-3 .modal-bg-col-3 .yjqs-span:nth-child(2) {
+    top: 379px;
+}
+.modal-bg-2 .modal-bg-col-3 .jqqs-span:nth-child(3),
+.modal-bg-3 .modal-bg-col-3 .yjqs-span:nth-child(3) {
+    top: 542px;
+}
+
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(1),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(1) {
+    top: 12px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(2),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(2) {
+    top: 94px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(3),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(3) {
+    top: 176px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(4),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(4) {
+    top: 258px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(5),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(5) {
+    top: 340px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(6),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(6) {
+    top: 422px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(7),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(7) {
+    top: 504px;
+}
+.modal-bg-2 .modal-bg-col-4 .jqqs-span:nth-child(8),
+.modal-bg-3 .modal-bg-col-4 .yjqs-span:nth-child(8) {
+    top: 586px;
+}
+.cfx{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+#dnczlModal .row{
+    margin: 0;
+}
+#dlysEcharts1, #dlysEcharts2, #dlysEcharts3{
+    display: none;
+}
+#xzwsEcharts{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 380px;
+    height: 250px;
+    border-radius: .2rem;
+    /* border: 1px solid #007aff; */
+    z-index: 12;
+    display: none;
+}
+#xzwsEcharts2{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 398px;
+    height: 250px;
+    border-radius: .2rem;
+    /* border: 1px solid #007aff; */
+    z-index: 12;
+    display: none;
+}
+#dlys10{
+    width: 140px;
+    background: transparent;
+    height: 34px;
+}
+#dlys10 option{
+    color: #fff;
+    background: rgba(35, 70, 128, 0.9);
+}
+#dlys11, #dlys12{
+    width: 140px;
+    background: transparent;
+    height: 34px;
+}
+#dlys11 option, #dlys12 option{
+    color: #fff;
+    background: rgba(35, 70, 128, 0.9);
+}
+#wuranEbOX, #wuranEbOX2, #danshuiBox, #xztyEcharts, #xzhyEcharts, #xzhyEcharts4{
+    height: 250px;
+    display: none;
+}
+#xzfjEcharts, #xzfjEcharts2{
+    height: 220px;
+    display: none;
+}
+#xzhyEcharts, #xzhyEcharts4{
+    width: 38 8px;
+}
+#danshuiC{
+    width: 100%;
+    height: 250px;
+    border-radius: .2rem;
+    z-index: 12;
+}
+#xzqsOkBtn{
+    position: relative;
+    z-index: 14;
+    right: 16px;
+}
+#xztyEcharts{
+    width: 380px;
+}
+#xzfjEcharts, #xzfjEcharts2{
+    width: 380px;
+}
+/* 近期 远景情况分析Box */
+#jqqsModal, #yjqsModal{
+    width: 27.3vw;
+}
+
+#haiyuBox span{
+    width: 100px !important;
+}
+#kjczlBtnBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#kjczlBtnBox input{
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid #00aeff;
+    border-radius: 4px;
+}
+#kjczlBtnBox input:active{
+    background: rgba(22,221,253,0.6);
+}
+
+/* 空间承载力属性修改框 */
+#kjczlAttrEditBox{
+    position: absolute;
+    z-index: 30;
+    width: 500px;
+    height: 188px;
+    background-color: rgba(1, 14, 59, .36);
+    overflow: hidden;
+    border: 1px solid #007aff;
+    right: 20px;
+    /* top: 622px; */
+    bottom: 20px;
+    display: none;
+}
+#attrEditBoxTitle{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: .8rem;
+    height: 34px;
+    line-height: 34px;
+}
+#attrEditBoxClose{
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    color: #0b56af;
+}
+#attrEditContent{
+    width: 100%;
+    overflow: auto;
+    height: 66px;
+    position: relative;
+}
+#attrTableTitle{
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+}
+#attrTable{
+    width: 400px;
+    margin: 0 auto;
+}
+#attrTable td, #attrTableTitle td{
+    width: 50%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    color: white;
+}
+#attrEditBtn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin: 8px 0;
+    justify-content: space-around;
+}
+#attrEditBtn input{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    border: 1px solid #00aeff;
+    border-radius: 4px;
+    background: transparent;
+}
+#attrTable input{
+    background: transparent;
+    border: 0px;
+    color: white;
+    width: 80%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+#attrEditBoxClose{
+    cursor: pointer;
+}
+.hideRadio{
+    display: none;
+}
+#timeCheckBox{
+    line-height: 34px;
+}
+.timeCheckItem{
+    cursor: pointer;
+}
+#fjNum, #fdjNum, #tynNum, #xdcNum{
+    position: relative;
+    left: -40px;
+    top: 17px;
+}
+#ndSeleBox span{
+    width: 100px !important;
+}
+#hjndSeleBox2 span{
+    width: 100px !important;
+}
+#hjczlEcharts22{
+    width: 200px;
+    height: 70px;
+}
+#dbjlEcharts{
+    width: 390px;
+    height: 320px;
+    display: none;
+}
+#dbjlEcharts_mn{
+    width: 390px;
+    height: 320px;
+    display: none;
+}
+#hjczlModal{
+    width: 400px;
+}
+#hjczlform{
+    padding: 0 10px;
+}
+#hjczlEcharts{
+    width: 298px;
+    height: 320px;
+    display: none;
+}
+#jsfxEcharts{
+    width: 468px;
+}
+#dbjlmnModal{
+    width: 432px;
+}
+.wrwRadioBox, .wrwRadioBox2{
+    cursor: pointer;
+}
+/* 承载力情势分析新样式CSS集合开始 */
+.one_zyczl{
+    width: 100px !important;
+    height: 100px  !important;
+    border-radius: 50%;
+    top: 220px !important;
+    left: 42px !important;
+}
+.one_hjczl{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    top: 380px !important;
+    left: 4px !important;
+}
+.one_dn{
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    top: 122px !important;
+    left: 22px !important;
+}
+.one_ds{
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    top: 290px !important;
+    left: 28px !important;
+}
+.one_hy{
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    top: 492px !important;
+    left: -24px !important;
+}
+.one_xdc{
+    width: 60px !important;
+    height: 60px !important;
+    top: 92px !important;
+    border-radius: 50%;
+    left: 0px !important;
+}
+.one_cyfdj{
+    width: 72px !important;
+    height: 72px !important;
+    top: 8px !important;
+    border-radius: 50%;
+    left: -146px !important;
+}
+.one_fj{
+    width: 60px !important;
+    height: 60px !important;
+    top: 194px !important;
+    border-radius: 50%;
+    left: -30px !important;
+}
+.one_tyn{
+    width: 60px !important;
+    height: 60px !important;
+    top: 88px !important;
+    border-radius: 50%;
+    left: -272px !important;
+}
+.one_js{
+    width: 60px !important;
+    height: 60px !important;
+    top: 420px !important;
+    border-radius: 50%;
+    left: -76px !important;
+}
+.one_hsdh{    
+    width: 70px !important;
+    height: 70px !important;
+    top: 284px !important;
+    border-radius: 50%;
+    left: 6px !important;
+}
+.one_shws{
+    width: 70px !important;
+    height: 70px !important;
+    top: 576px !important;
+    left: -278px !important;
+    border-radius: 50%;
+}
+.one_dbjl{
+    width: 70px !important;
+    height: 70px !important;
+    top: 564px !important;
+    left: -82px !important;
+    border-radius: 50%;
+}
+/* 承载力情势分析新样式CSS集合结束 */
+
+/* 环境 - 生活污水估算开始 */
+
+/* 环境 - 生活污水估算结束 */
+#shwsgsModal{
+    width: 430px;
+}
+/* 电力资源承载力表格开始 */
+
+#dlzyTable{
+    width: 100%;
+    margin: 10px 0;
+}
+#dlzyTable tr{
+    width: 100%;
+}
+#dlzyTable td{
+    width: 33.33%;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #007aff;
+    text-align: center;
+}
+/* 电力资源承载力表格结束 */
+/* 时间轴开始 */
+.timeBox {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    z-index: 20;
+    display: none;
+}
+.timeBox::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.progressTime {
+    /*filter: alpha(opacity=50); -moz-opacity: 0.5; -khtml-opacity: 0.5; opacity: 0.5;*/
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 36px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: none;
+    position: relative;
+    float: left;
+}
+
+#progressTime_concent {
+    width: 100%;
+    height: 36px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#scrollBarBox {
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    position: absolute;
+    top: -6px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+#scrollBar {
+    width: 100%;
+    height: 6px;
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.timecode {
+    height: 24px;
+    line-height: 24px;
+    background-color: #9D0300;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    padding: 0 4px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.timecode:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #9D0300;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -5px;
+}
+
+#scroll_Track {
+    width: 0px;
+    height: 6px;
+    background-color: #9D0300;
+    transition: all ease-in-out .25s;
+}
+
+#scroll_Thumb {
+    height: 24px;
+    width: 100px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    font-size: 12px;
+    transition: all ease-in-out .25s;
+}
+
+
+/*#scroll_Thumb:hover { background-color: #ff4400; border: 1px solid #fff; }*/
+
+.time_slot p {
+    float: left;
+    line-height: 36px;
+    width: calc(20% - 1px);
+    border-left: 1px solid #ccc;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+}
+.time_slot p:first-child {
+    border-left-color: rgba(0, 0, 0, 0);
+}
+.time_slot::after {
+    content: "";
+    clear: both;
+    display:block;
+    visibility: hidden;
+}
+
+.date_slot {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+.date_slot p {
+    float: left;
+    line-height: 6px;
+    width: calc(20% - 1px);
+    border-left: 1px solid #00f;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0;
+    box-sizing: content-box;
+}
+/* .date_slot p:last-child {
+    border-right: 1px solid #00f;
+} */
+.date_slot::after {
+    content: "";
+    clear: both;
+    display:block;
+    visibility: hidden;
+}
+.time-play,
+.time-pause,
+.time-stop,
+.time-next,
+.time-prev {
+    width: 80px;
+    height: 40px;
+}
+/* 时间轴结束 */
+
+/* 空间承载力新内容 */
+#peopleText{
+    background: transparent;
+    border: 1px solid #fff;
+    height: 30px;
+    text-indent: 10px;
+}
+#peopleNumConfirm, #ckzyBtn, #ckhjBtn,#peopleNumConfirm2, #ckzyBtn2, #ckhjBtn2, #kwq, #kwhid{
+    width: 84px;
+    height: 32px;
+    background: #0B56AF;
+    color: white;
+    text-align: center;
+    border: 0px;
+    font-size: 16px;
+    outline: none;
+}
+#peopleTable, #attrTyeTable, #attrTyeTable2{
+    width: 100%;
+    display: none;
+}
+#targetTable{
+    display: none;
+}
+#peopleTable tr, #attrTyeTable tr, #attrTyeTable2 tr{
+    width: 100%;
+}
+#peopleTable td, #attrTyeTable td, #attrTyeTable2 td{
+    width: 50%;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #007aff;
+    text-align: center;
+}
+#peopleTable2, #attrTyeTable3, #attrTyeTable4{
+    width: 100%;
+}
+#kjczltable, #kjczltable2{
+    width: 90%;
+    margin-left: 5%;
+}
+#peopleTable2 tr, #attrTyeTable3 tr, #attrTyeTable4 tr, #kjczltable tr, #kjczltable tr, #kjczltable2 tr{
+    width: 100%;
+}
+#peopleTable2 td, #attrTyeTable3 td, #attrTyeTable4 td, #kjczltable td, #kjczltable td, #kjczltable2 td{
+    width: 50%;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid #007aff;
+    text-align: center;
+}
+.mar10{
+    margin: 10px 0;
+}
+#peopleTableBox, #attrTypeTableBox, #attrTypeTableBox2{
+    height: 160px;
+    overflow: auto;
+}
+
+#peopleTableBox2, #attrTypeTableBox3, #attrTypeTableBox4{
+    height: 160px;
+    overflow: auto;
+}
+#peopleTableBox, #attrTypeTableBox2,#peopleTableBox2, #attrTypeTableBox4 {
+    display: none;
+}
+#kjczl .modal-body{
+    min-height: 40vh;
+}
+/* 空间承载力新内容结束 */
+
+/* 电能承载力 */
+.fnItem{
+    display: none;
+}
+.titleItme{
+    cursor: pointer;
+}
+.titleAc{
+    color: #52f3ff !important;
+}
+#bghead{
+    background: url("../images/index/header_bg_5.png") no-repeat;
+    background-position: center center;
+    background-size: 80% 80%;
+}
+#bghead .tit-con{
+    background: transparent !important;
+}
+.blue{
+    color: #52f3ff;
+    font-size: 30px !important;
+}
+.bgline{
+    height: 1px;
+    width: 100%;
+    background: #007aff;
+    margin: 10px 0;
+}
+#zhfxConfirm{
+    width: 80%;
+    margin: 10px 10% 0;
+}
+#hjczlpgCanvasModal{
+    width: 400px;
+}
+#shwsCanvas, #dbjlCanvas, #hyCanvas{
+    height: 220px;
+    width: 380px;
+    margin-left: 8px;
+}
+#btnBox, #btnBox2{
+    width: 172px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#ckzyBtn, #ckzyBtn2{
+    border: 1px solid #fff;
+}
+.transparent{
+    background: transparent !important;
+}
+.fontColorRed{
+    color: red;
+}
+#zhfxPeopleNumber{
+    line-height: 34px;
+}
+/* 第二个板块小球位置调整 */
+#jqqsModal .two_zyczl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 180px;
+    left: -142px;
+}
+#jqqsModal .two_hjczl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 182px;
+    left: 28px;
+}
+#jqqsModal .two_rksl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 116px;
+    left: 140px;
+}
+#jqqsModal .two_dn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 16px;
+    left: 2px;
+}
+#jqqsModal .two_ds{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 356px;
+    left: -12px;
+}
+#jqqsModal .two_hy{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 188px;
+    left: 82px;
+}
+/* 第三个板块小球位置调整 */
+#yjqsModal .three_zyczl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 182px;
+    left: -144px;
+    text-align: center;
+}
+#yjqsModal .three_hjczl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 186px;
+    left: 28px;
+    text-align: center;
+}
+#yjqsModal .three_rksl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 116px;
+    left: 140px;
+    text-align: center;
+}
+#yjqsModal .three_dn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 18px;
+    left: 0px;
+    text-align: center;
+}
+#yjqsModal .three_ds{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 354px;
+    left: -12px;
+    text-align: center;
+}
+#yjqsModal .three_hy{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 42px;
+    top: 184px;
+    left: 82px;
+    text-align: center;
+}
+.buttonBox input[type="button"]{
+    background: #0B56AF;
+    border: 0px;
+    height: 32px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.transparent2{
+    background: transparent !important;
+    border: 1px solid #fff !important;
+}
+.szyItem{
+    display: none;
+}
+
+@media (max-width:1700px){
+    #xzqsModal{
+        width: 27vw;
+    }
+    #xzqscsModal.right-modal-show2{
+        right: 28vw;
+    }
+    /* 承载力情势分析新样式CSS集合开始 */
+    .one_zyczl{
+        width: 100px !important;
+        height: 100px  !important;
+        border-radius: 50%;
+        top: 212px !important;
+        left: 40px !important;
+    }
+    .one_hjczl{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+        top: 368px !important;
+        left: 2px !important;
+    }
+    .one_dn{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 118px !important;
+        left: 16px !important;
+    }
+    .one_ds{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 282px !important;
+        left: 24px !important;
+    }
+    .one_hy{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 474px !important;
+        left: -28px !important;
+    }
+    .one_xdc{
+        width: 60px !important;
+        height: 60px !important;
+        top: 88px !important;
+        border-radius: 50%;
+        left: -4px !important;
+    }
+    .one_cyfdj{
+        width: 72px !important;
+        height: 72px !important;
+        top: 8px !important;
+        border-radius: 50%;
+        left: -151px !important;
+    }
+    .one_fj{
+        width: 60px !important;
+        height: 60px !important;
+        top: 186px !important;
+        border-radius: 50%;
+        left: -34px !important;
+    }
+    .one_tyn{
+        width: 60px !important;
+        height: 60px !important;
+        top: 84px !important;
+        border-radius: 50%;
+        left: -276px !important;
+    }
+    .one_js{
+        width: 60px !important;
+        height: 60px !important;
+        top: 404px !important;
+        border-radius: 50%;
+        left: -82px !important;
+    }
+    .one_hsdh{    
+        width: 70px !important;
+        height: 70px !important;
+        top: 274px !important;
+        border-radius: 50%;
+        left: 0px !important;
+    }
+    .one_shws{
+        width: 70px !important;
+        height: 70px !important;
+        top: 558px !important;
+        left: -280px !important;
+        border-radius: 50%;
+    }
+    .one_dbjl{
+        width: 70px !important;
+        height: 70px !important;
+        top: 546px !important;
+        left: -88px !important;
+        border-radius: 50%;
+    }
+    /* 承载力情势分析新样式CSS集合结束 */
+    #jqqsModal, #yjqsModal{
+        width: 30vw;
+    }
+    .modal-bg-2, .modal-bg-3{
+        height: 48vh;
+    }
+    .right-modal-show3{
+        right: 31vw;
+    }
+
+    /* 第二个板块小球位置调整 */
+    #jqqsModal .two_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 176px;
+        left: -146px;
+    }
+    #jqqsModal .two_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 180px;
+        left: 18px;
+    }
+    #jqqsModal .two_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 108px;
+        left: 132px;
+    }
+    #jqqsModal .two_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 20px;
+        left: -12px;
+    }
+    #jqqsModal .two_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 340px;
+        left: -26px;
+    }
+    #jqqsModal .two_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 180px;
+        left: 64px;
+    }
+    /* 第三个板块小球位置调整 */
+    #yjqsModal .three_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 176px;
+        left: -146px;
+        text-align: center;
+    }
+    #yjqsModal .three_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 180px;
+        left: 18px;
+        text-align: center;
+    }
+    #yjqsModal .three_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 108px;
+        left: 132px;
+        text-align: center;
+    }
+    #yjqsModal .three_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 20px;
+        left: -12px;
+        text-align: center;
+    }
+    #yjqsModal .three_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 340px;
+        left: -26px;
+        text-align: center;
+    }
+    #yjqsModal .three_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 180px;
+        left: 64px;
+        text-align: center;
+    }
+    
+    .right-modal-show2{
+        right: 32vw;
+    }
+}
+@media (max-width:1600px){
+    .header-1 .text {
+        width: 74%;
+    }
+    #xzqsModal{
+        width: 27vw;
+    }
+    .modal-bg-1{
+        height: 78vh;
+    }
+    /* 承载力情势分析新样式CSS集合开始 */
+    .one_zyczl{
+        width: 100px !important;
+        height: 100px  !important;
+        border-radius: 50%;
+        top: 200px !important;
+        left: 34px !important;
+    }
+    .one_hjczl{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+        top: 354px !important;
+        left: 0px !important;
+    }
+    .one_dn{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 112px !important;
+        left: 6px !important;
+    }
+    .one_ds{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 268px !important;
+        left: 14px !important;
+    }
+    .one_hy{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 454px !important;
+        left: -34px !important;
+    }
+    .one_xdc{
+        width: 60px !important;
+        height: 60px !important;
+        top: 84px !important;
+        border-radius: 50%;
+        left: -24px !important;
+    }
+    .one_cyfdj{
+        width: 72px !important;
+        height: 72px !important;
+        top: 6px !important;
+        border-radius: 50%;
+        left: -162px !important;
+    }
+    .one_fj{
+        width: 60px !important;
+        height: 60px !important;
+        top: 180px !important;
+        border-radius: 50%;
+        left: -50px !important;
+    }
+    .one_tyn{
+        width: 60px !important;
+        height: 60px !important;
+        top: 78px !important;
+        border-radius: 50%;
+        left: -280px !important;
+    }
+    .one_js{
+        width: 60px !important;
+        height: 60px !important;
+        top: 388px !important;
+        border-radius: 50%;
+        left: -94px !important;
+    }
+    .one_hsdh{    
+        width: 70px !important;
+        height: 70px !important;
+        top: 264px !important;
+        border-radius: 50%;
+        left: -20px !important;
+    }
+    .one_shws{
+        width: 70px !important;
+        height: 70px !important;
+        top: 536px !important;
+        left: -286px !important;
+        border-radius: 50%;
+    }
+    .one_dbjl{
+        width: 70px !important;
+        height: 70px !important;
+        top: 526px !important;
+        left: -102px !important;
+        border-radius: 50%;
+    }
+    /* 承载力情势分析新样式CSS集合结束 */
+    .modal-bg-2, .modal-bg-3{
+        height: 53vh;
+    }
+
+    /* 第二个板块小球位置调整 */
+    #jqqsModal .two_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: -148px;
+    }
+    #jqqsModal .two_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 164px;
+        left: 6px;
+    }
+    #jqqsModal .two_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 98px;
+        left: 122px;
+    }
+    #jqqsModal .two_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 12px;
+        left: -30px;
+    }
+    #jqqsModal .two_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 316px;
+        left: -42px;
+    }
+    #jqqsModal .two_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 162px;
+        left: 42px;
+    }
+    /* 第三个板块小球位置调整 */
+    #yjqsModal .three_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: -148px;
+        text-align: center;
+    }
+    #yjqsModal .three_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 164px;
+        left: 6px;
+        text-align: center;
+    }
+    #yjqsModal .three_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 98px;
+        left: 122px;
+        text-align: center;
+    }
+    #yjqsModal .three_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 12px;
+        left: -30px;
+        text-align: center;
+    }
+    #yjqsModal .three_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 316px;
+        left: -42px;
+        text-align: center;
+    }
+    #yjqsModal .three_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 162px;
+        left: 42px;
+        text-align: center;
+    }
+    
+    #xzqscsModal.right-modal-show2{
+        right: 31vw;
+    }
+    .right-modal-show2{
+        right: 34vw;
+    }
+}
+@media (max-width:1500px){
+    
+    .right-modal-show2{
+        right: 37vw;
+    }
+    .header-1 .text {
+        width: 74%;
+    }
+    #xzqsModal{
+        width: 30vw;
+    }
+    .modal-bg-1{
+        height: 78vh;
+    }
+    #xzqscsModal.right-modal-show2{
+        right: 31vw;
+    }
+    .right-modal-show3{
+        right: 35vw;
+    }
+    /* 承载力情势分析新样式CSS集合开始 */
+    .one_zyczl{
+        width: 100px !important;
+        height: 100px  !important;
+        border-radius: 50%;
+        top: 204px !important;
+        left: 34px !important;    
+    }
+    .one_hjczl{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+        top: 356px !important;
+        left: 2px !important;
+    }
+    .one_dn{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 114px !important;
+        left: 6px !important;
+    }
+    .one_ds{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 272px !important;
+        left: 12px !important;
+    }
+    .one_hy{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 452px !important;
+        left: -36px !important;
+    }
+    .one_xdc{
+        width: 60px !important;
+        height: 60px !important;
+        top: 84px !important;
+        border-radius: 50%;
+        left: -24px !important;
+    }
+    .one_cyfdj{
+        width: 72px !important;
+        height: 72px !important;
+        top: 8px !important;
+        border-radius: 50%;
+        left: -162px !important;
+    }
+    .one_fj{
+        width: 60px !important;
+        height: 60px !important;
+        top: 178px !important;
+        border-radius: 50%;
+        left: -50px !important;
+    }
+    .one_tyn{
+        width: 60px !important;
+        height: 60px !important;
+        top: 80px !important;
+        border-radius: 50%;
+        left: -280px !important;
+    }
+    .one_js{
+        width: 60px !important;
+        height: 60px !important;
+        top: 390px !important;
+        border-radius: 50%;
+        left: -96px !important;
+    }
+    .one_hsdh{    
+        width: 70px !important;
+        height: 70px !important;
+        top: 264px !important;
+        border-radius: 50%;
+        left: -18px !important;
+    }
+    .one_shws{
+        width: 70px !important;
+        height: 70px !important;
+        top: 540px !important;
+        left: -286px !important;
+        border-radius: 50%;
+    }
+    .one_dbjl{
+        width: 70px !important;
+        height: 70px !important;
+        top: 526px !important;
+        left: -104px !important;
+        border-radius: 50%;
+    }
+    /* 承载力情势分析新样式CSS集合结束 */
+    .modal-bg-2, .modal-bg-3{
+        height: 53vh;
+    }
+    #jqqsModal, #yjqsModal{
+        width: 34vw;
+    }
+
+    /* 第二个板块小球位置调整 */
+    #jqqsModal .two_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: -148px;
+    }
+    #jqqsModal .two_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: 10px;
+    }
+    #jqqsModal .two_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 104px;
+        left: 126px;
+    }
+    #jqqsModal .two_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 12px;
+        left: -22px;
+    }
+    #jqqsModal .two_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 316px;
+        left: -36px;
+    }
+    #jqqsModal .two_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: 52px;
+    }
+    /* 第三个板块小球位置调整 */
+    #yjqsModal .three_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: -148px;
+        text-align: center;
+    }
+    #yjqsModal .three_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: 10px;
+        text-align: center;
+    }
+    #yjqsModal .three_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 104px;
+        left: 126px;
+        text-align: center;
+    }
+    #yjqsModal .three_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 12px;
+        left: -22px;
+        text-align: center;
+    }
+    #yjqsModal .three_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 316px;
+        left: -36px;
+        text-align: center;
+    }
+    #yjqsModal .three_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 160px;
+        left: 52px;
+        text-align: center;
+    }
+}
+@media (max-width:1400px){
+    .header-1 .text {
+        width: 68%;
+    }
+    
+    .right-modal-show2{
+        right: 39vw;
+    }
+    #xzqsModal {
+        width: 28vw;
+    }
+    /* 承载力情势分析新样式CSS集合开始 */
+    .one_zyczl{
+        width: 100px !important;
+        height: 100px  !important;
+        border-radius: 50%;
+        top: 164px !important;
+        left: 22px !important;
+    }
+    .one_hjczl{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+        top: 288px !important;
+        left: -8px !important;
+    }
+    .one_dn{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 88px !important;
+        left: -24px !important;
+    }
+    .one_ds{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 220px !important;
+        left: -18px !important;
+    }
+    .one_hy{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50%;
+        top: 372px !important;
+        left: -60px !important;
+    }
+    .one_xdc{
+        width: 60px !important;
+        height: 60px !important;
+        top: 64px !important;
+        border-radius: 50%;
+        left: -70px !important;
+    }
+    .one_cyfdj{
+        width: 72px !important;
+        height: 72px !important;
+        top: 0px !important;
+        border-radius: 50%;
+        left: -190px !important;
+    }
+    .one_fj{
+        width: 60px !important;
+        height: 60px !important;
+        top: 144px !important;
+        border-radius: 50%;
+        left: -92px !important;
+    }
+    .one_tyn{
+        width: 60px !important;
+        height: 60px !important;
+        top: 60px !important;
+        border-radius: 50%;
+        left: -294px !important;
+    }
+    .one_js{
+        width: 60px !important;
+        height: 60px !important;
+        top: 318px !important;
+        border-radius: 50%;
+        left: -132px !important;
+    }
+    .one_hsdh{    
+        width: 70px !important;
+        height: 70px !important;
+        top: 214px !important;
+        border-radius: 50%;
+        left: -66px !important;
+    }
+    .one_shws{
+        width: 70px !important;
+        height: 70px !important;
+        top: 444px !important;
+        left: -300px !important;
+        border-radius: 50%;
+    }
+    .one_dbjl{
+        width: 70px !important;
+        height: 70px !important;
+        top: 430px !important;
+        left: -140px !important;
+        border-radius: 50%;
+    }
+    /* 承载力情势分析新样式CSS集合结束 */
+    .modal-bg-2, .modal-bg-3{
+        height: 68vh;
+    }
+
+    /* 第二个板块小球位置调整 */
+    #jqqsModal .two_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 172px;
+        left: -142px;
+    }
+    #jqqsModal .two_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 178px;
+        left: 26px;
+    }
+    #jqqsModal .two_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 116px;
+        left: 138px;
+    }
+    #jqqsModal .two_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 14px;
+        left: -2px;
+    }
+    #jqqsModal .two_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 336px;
+        left: -14px;
+    }
+    #jqqsModal .two_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 178px;
+        left: 76px;
+    }
+    /* 第三个板块小球位置调整 */
+    #yjqsModal .three_zyczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 172px;
+        left: -142px;
+        text-align: center;
+    }
+    #yjqsModal .three_hjczl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 178px;
+        left: 26px;
+        text-align: center;
+    }
+    #yjqsModal .three_rksl{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 116px;
+        left: 138px;
+        text-align: center;
+    }
+    #yjqsModal .three_dn{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 14px;
+        left: -2px;
+        text-align: center;
+    }
+    #yjqsModal .three_ds{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 336px;
+        left: -14px;
+        text-align: center;
+    }
+    #yjqsModal .three_hy{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        line-height: 42px;
+        top: 178px;
+        left: 76px;
+        text-align: center;
+    }
+    .right-modal-show3 {
+        right: 39vw;
+    }
+    #jqqsModal, #yjqsModal {
+        width: 38vw;
+    }
+}
+
+#khsEchartsBox{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+    background: white;
+}
+
+#kxtEchartsBox {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+    background: white;
+}
+#kxtContent {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+#kxtContent > div{
+    width: 250px;
+    height: 500px;
+}
+#kxt2 {
+    position: relative;
+    left: -20px;
+}
+#legendBgBox{
+    min-width: 80px;
+    min-height: 120px;
+    max-width: 150px;
+    max-height: 200px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    z-index: 2;
+    display: none;
+    background: white;
+}
+#legendBox{
+    width: 100%;
+    height: 100%;
+}

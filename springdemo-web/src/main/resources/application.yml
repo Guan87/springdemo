@@ -1,0 +1,73 @@
+server:
+  port: 8088
+  servlet:
+    session:
+      cookie:
+        max-age: 1800s
+spring:
+  application:
+    name: springdemo
+#  profiles:
+#    active: dev
+  cache:
+    type: simple
+  http:
+    encoding:
+      force: true
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 60MB
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC #不加报错 主要原因由于时区问题，可能乱码或者获取不当。将时区改成UTC标准就好，也解决中文乱码问题?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      username: root
+      password: 123456
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      #filters: stat,wall,log4j
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+  mvc:
+    static-path-pattern: classpath:/static/
+  thymeleaf:
+    cache: false
+    prefix: classpath:/static/
+    suffix: .html
+#  清除缓存
+mybatis:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.david.*.*.model
+
+
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*Mapper.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#      db-type: mysql
+#      logic-delete-value: true # 逻辑已删除值(默认为 1)
+#      logic-not-delete-value: false # 逻辑未删除值(默认为 0)
+#  configuration:
+#    map-underscore-to-camel-case: true # 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射
+#    call-setters-on-nulls: true

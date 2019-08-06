@@ -1,0 +1,164 @@
+/**
+ * Created by BETTY on 2019/3/14.
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url("../images/login/bg.png") no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.login-title {
+    height: 10vh;
+    line-height: 10vh;
+    margin-top: 16.8vh;
+    text-align: center;
+}
+.login-title .titimg1 {
+    margin-right: 10px;
+    height: 7.2vh;
+}
+.login-title .titimg2 {
+    height: 5vh;
+    margin-right: 30px;
+}
+.login-form {
+    width: 37vh;
+    min-width: 300px;
+    margin: 6.4vh auto 0;
+    padding: 0 38px 2.5vh;
+    border-radius: 8px;
+    background: rgba(252, 252, 252, 0.5);
+}
+#login {
+}
+#register {
+    display: none;
+}
+#title{
+    font-size: 30px;
+    color: #99CCFF;
+    text-align: center;
+}
+.login-tit {
+    height: 7vh;
+    line-height: 7vh;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+}
+.login-inp {
+    margin-bottom: 2vh;
+    background: rgba(255,255,255,0.7);
+}
+.inp-hover {
+    box-shadow:0 3px 9px rgba(255,37,64,.24);
+    border-radius: 0;
+}
+.login-inp .input-group-addon {
+    height: 4.3vh;
+    border: 0;
+    background: transparent;
+}
+.login-inp .form-control {
+    height: 4.3vh;
+    border: 0;
+    background: transparent;
+}
+.login-inp .iconfont {
+    color: #605e5e;
+    font-size: 18px;
+}
+.login-text {
+    color: #fff;
+    font-size: 12px;
+    line-height: 2.4vh;
+}
+.login-text input[type='checkbox'] {
+    vertical-align: middle;
+    margin: 0;
+}
+.login-text label {
+    margin: 0;
+}
+.login-btn {
+    margin: 1.3vh 0;
+}
+.login-btn button {
+    width: 100%;
+    height: 4.3vh;
+    font-size: 16px;
+    background-color: #1181bf;
+    border-color: #1181bf;
+}
+.login-btn button:disabled {
+    background-color: #3a73ae;
+    border-color: #3a73ae;
+}
+.login-text .a1 {
+    color: #fff;
+    text-decoration: underline;
+}
+.login-text .a2 {
+    color: #fff;
+    font-size: 16px;
+}
+.login-text .a3 {
+    color: #1181bf;
+    font-size: 16px;
+}
+
+.loading {
+    display: inline-block;
+    width: 2.4vh;
+    height: 2.4vh;
+    vertical-align: middle;
+    background: url(../images/reset.png) no-repeat center center;
+    background-size: 2.4vh;
+    animation: mymove 1.2s linear 0s infinite;
+    -moz-animation: mymove 1.2s linear 0s infinite; /* Firefox */
+    -webkit-animation: mymove 1.2s linear 0s infinite; /* Safari and Chrome */
+    -o-animation: mymove 1.2s linear 0s infinite; /* Opera */
+}
+@keyframes mymove {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+#msgModal .modal-body {
+    text-align: center;
+    padding-top: 30px;
+}
+#msgModal .modal-header {
+    padding: 0;
+    height: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    background: #127faf;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+}
+#msgModal .modal-title {
+    height: 38px;
+    line-height: 38px;
+}
+#msgModal .btn {
+    padding: 0 20px;
+}
+#msgModal .modal-header .close {
+    margin: 0;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+}
